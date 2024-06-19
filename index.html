@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
     <title>Retos | Js</title>
 </head>
-<body>
 
-    <div>
-      <input type="text" id="nombreInput" placeholder="Ingrese un nombre">
-      <button onclick="addName()">Enviar</button>
-    </div>
-    
-    <div id="nombreLista"></div>
-    
-    <script src="./script/index.js"></script>
-    
-    </body>
+<body>
+    <header>
+        <nav>
+            <img src="./assets/logo-js.png" alt="logo-retos">
+            <p> bienvenido a los retos de js </p>
+            <img src="./assets/logo-js.png" alt="logo-retos">
+        </nav>
+    </header>
+    <main>
+        <h1> ¡ HORA DE LOS RETOS !</h1>
+        <section>
+            <div class="sem1Reto">
+                <h2>Reto semana 1</h2>
+                <p class="listName">Lista de nombres</p>
+                <p>Escribe un programa que le pida al usuario 3 nombres, los almacene en un arreglo de datos y luego los
+                    muestre, si el nombre está repetido, no debe guardarlo.
+                </p>
+                <div class="js-input">
+                    <input type="text" id="nombreInput" placeholder="Ingrese un nombre">
+                    <button class="btn-enviar" onclick="addName()">Enviar</button>
+                </div>
+
+                <div class="list-name" id="nombreLista"></div>
+            </div>
+            <script src="./script/index.js"></script>
+        </section>
+    </main>
+</body>
+
 </html>
