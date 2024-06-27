@@ -25,3 +25,18 @@ function displayNames() {
     return '<li>' + name + '</li>';
   }).join('') + '</ul>';
 }
+
+
+/* SEGUNDO RETO : SEMANA 2
+
+Generador de Números Primos 
+
+Descripción:
+Escribe una función en JavaScript que genere todos los números primos menores que un número dado n. Un número primo es un número natural mayor que 1 que no tiene divisores positivos más que 1 y él mismo.
+
+Requisitos:
+
+La función debe tomar un número entero n como argumento.
+La función debe devolver un array con todos los números primos menores que n.*/
+
+
