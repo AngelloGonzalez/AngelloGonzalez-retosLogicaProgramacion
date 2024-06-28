@@ -16,7 +16,7 @@ function addName() {
     names.push(name);
     displayNames();
   }
-  input.value = ''; // Clear the input field
+  input.value = ''; 
 }
 
 function displayNames() {
@@ -40,3 +40,33 @@ La función debe tomar un número entero n como argumento.
 La función debe devolver un array con todos los números primos menores que n.*/
 
 
+function esPrimo(num) {
+  if (num <= 1) return false;
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+      if (num % i === 0) return false;
+  }
+  return true;
+}
+
+function generarPrimos() {
+  const n = parseInt(document.getElementById('numeroInput').value);
+  const primos = [];
+  for (let i = 2; i < n; i++) {
+      if (esPrimo(i)) {
+          primos.push(i);
+      }
+  }
+  mostrarResultado(primos);
+}
+
+function mostrarResultado(primos) {
+  const resultadoDiv = document.getElementById('resultado');
+  resultadoDiv.innerHTML = '<br> <p>Números primos menores que N:</p> <br>';
+  const ul = document.createElement('ul');
+  primos.forEach(primo => {
+      const li = document.createElement('li');
+      li.textContent = primo;
+      ul.appendChild(li);
+  });
+  resultadoDiv.appendChild(ul);
+}

@@ -41,19 +41,32 @@ h1 {
     font-weight: bold;
 }
 
-h2{
-    margin: 3% 0%;
+.container-general{
+    display: flex;
 }
+
 .sem1Reto{
-    width: 40%;
+    width: 35%;
     margin-left: 2%;
+}
+
+.sem2Reto{
+    margin-left: 8%;
+    width: 50%;
 }
 
 .listName{
     color: darkblue;
     font-weight: bold;
     font-size: 20px;
-    margin: 3% 0%;
+    margin: 6% 0%;
+}
+
+.ge-num{
+    color: darkblue;
+    font-weight: bold;
+    font-size: 19px;
+    margin: 4% 0%;
 }
 
 .js-input{
@@ -61,7 +74,7 @@ h2{
 }
 
 .js-input input{
-    font-size: 18px;
+    font-size: 15px;
     border: none;
     border-radius: 5px;
     padding: 1%;
@@ -71,7 +84,7 @@ h2{
     transition: .5s, color .10s;
     -webkit-transition: .5s, color .10s;
     -moz-transition: .5s, color .10s;
-    font-size: 18px;
+    font-size: 15px;
     margin-left: 2%;
     padding: 5px;
     border: none;
@@ -88,7 +101,16 @@ h2{
     background-color: rgb(129, 2, 2);
 }
 
-.list-name {
+.list- {
     margin-left: 3%;
 }
               
+.input-num-pr{
+    border: none;
+    margin-top: 2%;
+    padding: 1% 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 1%;
+}
